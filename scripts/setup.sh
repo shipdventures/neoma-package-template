@@ -30,6 +30,12 @@ mv libs/PACKAGE_NAME "libs/$PACKAGE_NAME"
 
 echo "✅ Directory renamed"
 
+# Install dependencies and generate package-lock.json
+echo "📦 Installing dependencies and generating package-lock.json..."
+npm install
+
+echo "✅ Dependencies installed"
+
 # Clean up setup script
 echo "🧹 Removing setup script..."
 rm -rf scripts
@@ -38,8 +44,8 @@ echo
 echo "✅ Setup complete!"
 echo
 echo "Next steps:"
-echo "  1. npm install"
-echo "  2. npm test (start building with TDD)"
-echo "  3. npm run test:e2e (add E2E tests)"
+echo "  1. npm test (start building with TDD)"
+echo "  2. npm run test:e2e (add E2E tests)"
+echo "  3. npm run build (build the library)"
 echo
 echo "Happy coding! 🎉"

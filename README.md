@@ -170,3 +170,14 @@ All Neoma packages should:
 - ✅ Use TypeScript strictly
 - ✅ Follow consistent code style
 - ✅ Be production-ready
+
+## Template Improvements (TODO)
+
+Future enhancements to this template:
+
+- [ ] **GitHub Issue & PR Templates** - Add `.github/ISSUE_TEMPLATE/` for bug reports and feature requests, plus `.github/pull_request_template.md`
+- [ ] **CONTRIBUTING.md** - Document contribution guidelines, coding standards, and development workflow
+- [ ] **CHANGELOG.md Template** - Add template following Keep a Changelog format
+- [ ] **README Badges** - Add placeholders for CI status, npm version, and license badges
+- [ ] **VSCode Extensions** - Add `.vscode/extensions.json` with recommended extensions for NestJS development
+- [ ] **CODE_OF_CONDUCT.md** - Add community standards if accepting external contributions

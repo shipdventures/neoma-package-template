@@ -6,7 +6,7 @@
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   },
-  "setupFilesAfterEnv": ["<rootDir>/../fixtures/e2e-setup.js"],
+  "setupFilesAfterEnv": ["<rootDir>/../fixtures/build-module.js"],
   "moduleNameMapper": {
     "^fixtures/(.*)$": "<rootDir>/../fixtures/$1",
     "^src/(.*)$": "<rootDir>/../src/$1"

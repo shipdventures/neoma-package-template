@@ -3,7 +3,7 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "author": "",
   "private": true,
@@ -78,7 +78,8 @@
     ],
     "setupFilesAfterEnv": [
       "jest-extended/all",
-      "<rootDir>/fixtures/matchers/index.js"
+      "<rootDir>/fixtures/matchers/index.js",
+      "<rootDir>/fixtures/build-module.js"
     ],
     "moduleNameMapper": {
       "^fixtures/(.*)$": "<rootDir>/fixtures/$1",

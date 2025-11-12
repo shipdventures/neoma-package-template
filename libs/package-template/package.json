@@ -1,5 +1,5 @@
 {
-  "name": "@neoma/{{PACKAGE_NAME}}",
+  "name": "@neoma/package-template",
   "version": "0.1.0",
   "description": "{{PACKAGE_DESCRIPTION}}",
   "author": "Shipdventures",
@@ -13,7 +13,7 @@
   "homepage": "{{REPO_URL}}#readme",
   "keywords": [
     "nestjs",
-    "{{PACKAGE_NAME}}",
+    "package-template",
     "laravel",
     "neoma"
   ],

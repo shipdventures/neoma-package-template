@@ -25,8 +25,8 @@ find . -type f \( -name "*.json" -o -name "*.md" -o -name "*.ts" -o -name "*.yml
 echo "✅ Placeholders replaced"
 
 # Rename directory
-echo "📁 Renaming libs/PACKAGE_NAME to libs/$PACKAGE_NAME..."
-mv libs/PACKAGE_NAME "libs/$PACKAGE_NAME"
+echo "📁 Renaming libs/package-template to libs/$PACKAGE_NAME..."
+mv libs/package-template "libs/$PACKAGE_NAME"
 
 echo "✅ Directory renamed"
 

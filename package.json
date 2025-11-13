@@ -3,7 +3,7 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "",
   "author": "",
   "private": true,
@@ -12,7 +12,7 @@
     "build": "tsc -p ./libs/package-template/tsconfig.lib.json",
     "lint": "eslint .",
     "test": "node node_modules/.bin/jest --watch --runInBand",
-    "test:e2e": "node node_modules/.bin/jest --config ./specs/jest-e2e.json --watch --runInBand"
+    "test:e2e": "NEOMA_MANAGED_APP_MODULE_PATH=src/app.module.ts#AppModule node node_modules/.bin/jest --config ./specs/jest-e2e.json --watch --runInBand"
   },
   "dependencies": {
     "@neoma/package-template": "file:./libs/package-template",
@@ -26,6 +26,7 @@
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@faker-js/faker": "^9.6.0",
+    "@neoma/managed-app": "^0.2.0",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
@@ -78,12 +79,12 @@
     ],
     "setupFilesAfterEnv": [
       "jest-extended/all",
-      "<rootDir>/fixtures/matchers/index.js",
-      "<rootDir>/fixtures/build-module.js"
+      "<rootDir>/fixtures/matchers/index.js"
     ],
     "moduleNameMapper": {
-      "^fixtures/(.*)$": "<rootDir>/fixtures/$1",
-      "^src/(.*)$": "<rootDir>/src/$1"
+      "fixtures/(.*)$": "<rootDir>/fixtures/$1",
+      "@lib/(.*)$": "<rootDir>/libs/package-template/src/$1",
+      "@lib": "<rootDir>/libs/package-template/src"
     }
   }
 }

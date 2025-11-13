@@ -1,10 +1,10 @@
 import { HttpStatus } from "@nestjs/common"
-import { managedAppInstance } from "fixtures/app"
+import { managedAppInstance } from "@neoma/managed-app"
 import * as request from "supertest"
 
 describe("AppController (e2e)", () => {
-  it(`/status (GET) - responds with a HTTP ${HttpStatus.NO_CONTENT}`, () => {
-    const app = managedAppInstance()
+  it(`/status (GET) - responds with a HTTP ${HttpStatus.NO_CONTENT}`, async () => {
+    const app = await managedAppInstance()
     return request(app.getHttpServer())
       .get("/status")
       .expect(HttpStatus.NO_CONTENT)

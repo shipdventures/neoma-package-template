@@ -1,5 +1,5 @@
 // Export all public APIs here
-export * from "./modules/example.module"
+export * from "./example.module"
 
 // Additional exports as you build your package:
 // export * from "./decorators/your-decorator.decorator"

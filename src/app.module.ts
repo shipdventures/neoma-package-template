@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common"
 import { TypeOrmModule } from "@nestjs/typeorm"
-import { ExampleModule } from "@neoma/package-template"
+import { ExampleModule } from "@lib"
 import { AppController } from "./app.controller"
 
 @Module({

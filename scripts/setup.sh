@@ -21,6 +21,7 @@ echo "📝 Replacing placeholders..."
 find . -type f \( -name "*.json" -o -name "*.md" -o -name "*.ts" -o -name "*.yml" \) -exec sed -i '' "s|{{PACKAGE_NAME}}|$PACKAGE_NAME|g" {} +
 find . -type f \( -name "*.json" -o -name "*.md" -o -name "*.ts" -o -name "*.yml" \) -exec sed -i '' "s|{{PACKAGE_DESCRIPTION}}|$PACKAGE_DESCRIPTION|g" {} +
 find . -type f \( -name "*.json" -o -name "*.md" -o -name "*.ts" -o -name "*.yml" \) -exec sed -i '' "s|{{REPO_URL}}|$REPO_URL|g" {} +
+find . -type f \( -name "*.json" -o -name "*.md" -o -name "*.ts" -o -name "*.yml" \) -exec sed -i '' "s|package-template|$PACKAGE_NAME|g" {} +
 
 echo "✅ Placeholders replaced"
 

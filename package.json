@@ -15,7 +15,6 @@
     "test:e2e": "NEOMA_MANAGED_APP_MODULE_PATH=src/app.module.ts#AppModule node node_modules/.bin/jest --config ./specs/jest-e2e.json --watch --runInBand"
   },
   "dependencies": {
-    "@neoma/package-template": "file:./libs/package-template",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
